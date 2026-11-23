@@ -1,0 +1,22 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Local secrets
+.env
+
+# Agent session history
+.sessions.sqlite*
+
+# libraries artifacts
+.streamlit/
+.deepeval/
+.ruff_cache/
+.pytest_cache/

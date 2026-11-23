@@ -1,0 +1,27 @@
+[project]
+name = "rag-and-agents-seminar"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "coolname>=5.0.0",
+    "deepeval>=4.3.4",
+    "flights[mcp]>=0.9.0",
+    "langfuse>=4,<5",
+    "mcp-weather-server>=0.6.1",
+    "mcp[cli]>=1.12,<2",
+    "nest-asyncio>=1.6.0",
+    "openai-agents>=0.24.0",
+    "openinference-instrumentation-openai-agents>=2.8.3",
+    "pytest>=9.2.0",
+    "pyyaml>=6.0.3",
+    "ruff>=0.17.5",
+    "streamlit>=1.67.0",
+    "tenacity>=9.2.1",
+]
+
+[tool.pytest.ini_options]
+# The rerunfailures plugin opens a local socket even for a serial run.
+addopts = ["-p", "no:rerunfailures"]
+asyncio_default_fixture_loop_scope = "fixture-scope"
