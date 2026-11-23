@@ -76,19 +76,16 @@ Python 3.13+, `uv`. Команды выполняются из корня реп
 
 ### Подключение и запуск
 
-Создайте `.env`: адрес и ключ API моделей возьмите у преподавателя, а данные Langfuse — из своего проекта:
+Скопируйте шаблон в `.env`:
 
-```dotenv
-OPENAI_BASE_URL=<адрес API>
-OPENAI_API_KEY=<ключ API>
-AGENT_MODEL=qwen/qwen3.6-35b-a3b
-SYNTHETIC_USER_MODEL=openai/gpt-6-luna
-JUDGE_MODEL=openai/gpt-6-luna
-
-LANGFUSE_BASE_URL=<адрес Langfuse>
-LANGFUSE_PUBLIC_KEY=<публичный ключ>
-LANGFUSE_SECRET_KEY=<секретный ключ>
+```bash
+cp .env.example .env
 ```
+
+Заполните в `.env`:
+
+- `OPENAI_BASE_URL` и `OPENAI_API_KEY` — из Stepik.
+- `LANGFUSE_SECRET_KEY`, `LANGFUSE_PUBLIC_KEY` и `LANGFUSE_BASE_URL` — из своего проекта в Langfuse (см. выше).
 
 **Не меняйте модели, уровни thinking и параметры вызовов: ключ общий, бюджет ограничен.**
 
